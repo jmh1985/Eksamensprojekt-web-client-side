@@ -19,12 +19,15 @@
     <link rel="mask-icon" href="Favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <style media="screen">
+
+    </style>
 </head>
 
 <body>
-
-    
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+  
+     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="forside.html"><img id="logo" src="Images/logo-boghjornet.svg" alt="Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +36,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="bestsellers.html">Bestsellers</a>
+                <a class="nav-link active" aria-current="page" href="#">Bestsellers</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="medlem.html">Bliv medlem</a>
@@ -43,7 +46,7 @@
                   Kontakt og find vej
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Kontakt os</a></li>
+                  <li><a class="dropdown-item" href="kontakt.html">Kontakt os</a></li>
                   <li><a class="dropdown-item" href="find.html">Find os</a></li>
                 </ul>
               </li>
@@ -51,21 +54,35 @@
            </div>
         </div>
       </nav>
-   <section id="kontakt">
-    <div class="container">
-     <h1>Kontakt</h1>
-     <h3>Du er velkommen til at kontakte os, hvis du har spørgsmål.</h3>
-      <p id="kontaktopl">Tlf. 49944322
-      <a href="mailto:boghjornet@test.dk">Send email</a>
-     </p>
+<section id="bestsellers">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+    <table id="tableBooks">
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Forfatter</th>
+                <th>År</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <div class="bold">
+      OBS. Tryk på en bog for at se yderligere information.
     </div>
-  </section>
-  <div class="bottomBar">
-    <a href="forside.html">Forside</a>
-    <a href="bestsellers.html">Bestsellers</a>
-    <a href="medlem.html">Bliv medlem</a>
-    <a href="find.html">Find os</a>
+    </div>
   </div>
+</div>  
+</section>
+<div class="bottomBar">
+  <a href="forside.html">Forside</a>
+  <a href="medlem.html">Bliv medlem</a>
+  <a href="kontakt.html">Kontakt os</a>
+  <a href="find.html">Find os</a>
+</div>
     <script src="main.js"></script>
 </body>
 

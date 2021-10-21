@@ -22,7 +22,8 @@
 </head>
 
 <body>
-   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="forside.html"><img id="logo" src="Images/logo-boghjornet.svg" alt="Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +35,7 @@
                 <a class="nav-link active" aria-current="page" href="bestsellers.html">Bestsellers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="medlem.html">Bliv medlem</a>
+                <a class="nav-link active" href="#">Bliv medlem</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,28 +43,76 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="kontakt.html">Kontakt os</a></li>
-                  <li><a class="dropdown-item" href="#">Find os</a></li>
+                  <li><a class="dropdown-item" href="find.html">Find os</a></li>
                 </ul>
               </li>
              </ul>
            </div>
         </div>
       </nav>
-   <section id="find">
-    <div class="container">
-     <h1>Du finder os her</h1>
-     <p id="vej">Boholtevej 19
-        4600 Køge
-     </p>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6927.595365804749!2d12.169825834383055!3d55.457957495089566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652f0e356b4c9c7%3A0x471e9d52482e4214!2s4600%20K%C3%B8ge!5e0!3m2!1sda!2sdk!4v1633373114191!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+  <section id="medlem">
+   <div class="container">
+     <h1>Bliv medlem i dag</h1>
+      
+     <form action="" id="kundeMedlem">
+      <div class="mb-3">
+        <label for="navn" class="form-label">Navn</label>
+        <input type="text" class="form-control" id="navn" placeholder="Indtast dit fulde navn" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="name@name.dk" required>
+      </div>
+      <div class="mb-3">
+        <label for="number" class="form-label">Telefonnummer</label>
+        <input type="number" class="form-control" id="number" placeholder="11111111" required>
+      </div>
+      <div class="mb-3">
+        <label for="adresse" class="form-label">Vejnavn og nr.</label>
+        <input type="text" class="form-control" id="adress" placeholder="vej + vejnr." required>
+      </div>
+      <div class="mb-3">
+        <select class="form-select" id="postnr" aria-label="Default select example">
+          <option selected>Vælg postnummer</option>
+          <option value="1">2000</option>
+          <option value="2">2610</option>
+          <option value="3">2300</option>
+        </select>
+        </div>
+      <div class="mb-3">
+      <select class="form-select" id="by" aria-label="Default select example">
+        <option selected>Vælg by</option>
+        <option value="1">Frederiksberg</option>
+        <option value="2">Rødovre</option>
+        <option value="3">Amager</option>
+      </select>
+      </div>
+      <div class="mb-3">
+        <label for="password1" class="form-label">Indtast adgangskode</label>
+        <input type="password" class="form-control" id="password1" required>
+        <div id="passwordHelp1" class="form-text">Password skal bestå af minimum 8 tegn</div>
+      </div>
+      <div class="mb-3">
+        <label for="password2" class="form-label">Gentag adgangskode</label>
+        <input type="password" class="form-control" id="password2" required>
+        <div id="passwordHelp2" class="form-text">Password skal bestå af minimum 8 tegn</div>
+      </div>
+      <div class="mb-3">
+        <label for="kommentar" class="form-label">Kommentar</label>
+        <textarea class="form-control" id="kommentar" rows="5" placeholder="Mak 250 tegn"></textarea>
+      </div>
+      <button type="submit" id="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>
   </section>
+
      <div class="bottomBar">
       <a href="forside.html">Forside</a>
       <a href="bestsellers.html">Bestsellers</a>
-      <a href="medlem.html">Bliv medlem</a>
       <a href="kontakt.html">Kontakt os</a>
+      <a href="find.html">Find os</a>
     </div>
+    
     <script src="main.js"></script>
 </body>
 

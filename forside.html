@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styling.css">
+    <title>Boghjornet</title>
+    <link rel="icon" href="Favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="logo" src="Images/logo-boghjornet.svg" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="bestsellers.html">Bestsellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="medlem.html">Bliv medlem</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Kontakt og find vej
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="kontakt.html">Kontakt os</a></li>
+                  <li><a class="dropdown-item" href="find.html">Find os</a></li>
+                </ul>
+              </li>
+             </ul>
+             <ul class="navbar-nav ms-auto"> 
+              <li class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-basket3-fill" viewBox="0 0 20 20" id="basket">
+                  <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z"/>
+                </svg>
+              </li>
+             </ul>
+           </div>
+        </div>
+      </nav>
+    <!--En række = 12 col-->
+      <section id="forside">
+        <div class="container">
+          <div class="row bogliste">
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="meter" src="Images/meter.png" alt="Meter i sekundet"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="arabica" src="Images/Arabica.png" alt="Arabica"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="itends" src="Images/itendswithus.png" alt="It ends with us"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="storst" src="Images/tvilling.png" alt="Tvilling"></div>  
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="rampen" src="Images/rampen.png" alt="Rampen"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="stkgsgade" src="Images/stkongensgade.png" alt="Store Kongens gade"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="detsamme" src="Images/detsamme.png" alt="Det samme"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="uadskillelig" src="Images/deuadskillelige.png" alt="De uadskillelige"></div>  
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="aftentid" src="Images/aftentid.png" alt="Aftentid"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="achilles" src="Images/achilles.png" alt="Achilles"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="mennske" src="Images/menneske.png" alt="Menneske"></div>
+            <div class="col-lg-3 col-md-4 col-6"><img class="bogerImg" id="livlever" src="Images/livlever.png" alt="Liv lever"></div>  
+          </div>
+      </div>
+      <p>Tryk på bog for at tilføje den til kurv</p>
+     </section>
+     <div class="bottomBar">
+      <a href="bestsellers.html">Bestsellers</a>
+      <a href="medlem.html">Bliv medlem</a>
+      <a href="kontakt.html">Kontakt os</a>
+      <a href="find.html">Find os</a>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
