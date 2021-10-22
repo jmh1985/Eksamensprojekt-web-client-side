@@ -3,43 +3,57 @@ var filename = url.substring(url.lastIndexOf('/')+1);
 //alert(filename);
 if(filename === "forside.html") {
     
-document.getElementById("#forside");
-const forsideBoger = [
-    {navn:"Meter i sekundet", img:"Images/meter.png"},
-    {navn:"Arabica", img:"Images/Arabica.png"},
-    {navn:"It ends with us", img:"Images/itendswithus.png"},
-    {navn:"Tvilling", img:"Images/tvilling.png"},
-    {navn:"Rampen", img:"Images/rampen.png"},
-    {navn:"Store Kongensgade", img:"Images/stkongensgade.png"},
-    {navn:"Det samme", img:"Images/detsamme.png"},
-    {navn:"De Uadskillelige", img:"Images/deuadskillelige.png"},
-    {navn:"Aftentid", img:"aftentid.png"},
-    {navn:"Achilles", img:"Images/achilles.png"},
-    {navn:"Menneske", img:"Images/menneske.png"},
-    {navn:"Liv Lever", img:"Images/livlever.png"}
-];
 
-    const kurv = [];
-       
-    let boger = document.querySelector(".bogliste");
-    let bog = boger.getElementsByTagName("img");
+const kurv = [];
+
+let boger = document.querySelector(".bogliste");
+let bog = boger.getElementsByTagName("img");
     for(let i = 0; i < bog.length;i++) {
-        bog[i].addEventListener("click", function() {
-           kurv.push(bog[i].alt);
-        
-           alert("Du har tilføjet " + bog[i].alt + " til din kurv")
-        })
-    }
+    bog[i].addEventListener("click", function() {
+       kurv.push(bog[i].alt);
+    
+       alert("Du har tilføjet " + bog[i].alt + " til din kurv")
+    })
+}
 
- 
-        basket.addEventListener("click", function() {
-            if(kurv.length > 0) {
-                alert("Din kurv indeholder " + kurv.length + " bøger: " + kurv.join(", "));
-            }
-            else {
-                alert("Din kurv er tom");
-            }
-        })
+
+function uniqueBooksInKurv() {
+    let result = [];
+    for(let bookname of kurv) {
+        if(result.indexOf(bookname == -1)) {
+            result.push(bookname);
+        }
+    }
+    return result;
+}    
+
+function amountOfBooksInKurv(bookname) {
+    return kurv.filter(function(b) 
+        {
+            return b == bookname.length});
+    }
+}
+
+
+basket.addEventListener("click", function() {
+    if(kurv.length > 0) {
+        let str = "Din kurv indeholder " + kurv.length + "bøger:\n";
+
+        for(let bookname of uniqueBooksInKurv()) {
+            str += amountOfBooksInKurv(bookname) + "x" + bookname + "\n";
+        }
+        alert(str);
+    }
+    else {
+        alert("Din kurv er tom"); 
+    }
+});  
+
+
+
+  
+
+      
     
 
     /*for(let bog of forsideBoger) {
@@ -49,7 +63,7 @@ const forsideBoger = [
 
 })*/
     
-}
+
 
 
 //bestsellers.html
