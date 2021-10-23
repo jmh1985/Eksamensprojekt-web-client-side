@@ -1,3 +1,22 @@
+/* 
+ * In general - Good project! 
+ * That being said, I have a couple of suggestions: 
+ * 
+ * 1) Keep your code language in the same language. Meaning, don't mix danish and english in the code specific parts. 
+ *    So that 'kurv' is 'basket' and 'Boger' is 'books'. This helps others that don't speak danish, better understand your code in the future. 
+ * 2) 'Alert's. Use them only when it is absolutæly crutial that the use do not proceed without acknowledge what they are about to do. 
+ *    Like emptying their 'basket' or 'cart', or deleting their profile. 'Alert's hinder the flow of your page.
+ * 3) Have a look at array functions and arrow functions. They are crutial to how modern JS functions. Besides, having Lodash
+ *    (a third party npm package) is always a good idea. 
+ * 4) Consider how the concept of "State" would affect your page ? What happens if you reload the page ? 
+ * 5) Could you code split some of the main program ? Like loading a JSON with all of the standard books, so you don't 
+ *    have then in the main program ? 
+ * 6) Next time you have to do a client side assignment, consider using a framework like 
+ *    Vue, React, Angular, Svelte, NextJS (static page rendering), Ember, or any of the other 1 mil. different frameworks out there.
+ * 
+ * But, this is a good first step, and I bet you've learned a lot from this! Now for the real fun stuff! **NodeJS** :D :D 
+**/
+
 var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/') + 1);
 //alert(filename);
